@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            background-color:rgb(14,14,14);
+            color:white;
+            text-align: center;
+            font-family: 'Shippori Mincho B1', serif;
+            font-size: 14pt;
+        }
+        div {
+            background-color:rgb(73, 73, 73) ;
+            display: block;
+            border: solid 2px rgb(73, 73, 73);
+            border-radius: 10px;
+            margin-left: 475px;
+            margin-right: 475px;
+            margin-top: 0px;
+            height: 270px;
+            text-align: center;
+        }
+        input.button {
+            color: rgb(255, 255, 255);
+            background-color: #A883FF;
+            margin-top: 15px;
+            border-radius: 7px;
+            height:35px;
+            width:175px;
+            font-size: 12pt;
+            border-style: none;
+        }
+        span#inbutt :hover {
+            background-color:#c9b1ff;
+            transition: 0.7s;
+        }
+        span#regbutt :hover {
+            background-color:#c9b1ff;
+            transition: 0.7s;
+        }
+
+        h1 {
+            box-shadow: 1px 1px 1px white;
+         border: solid 5px #A883FF;
+         border-radius: 7px;
+         border-style: none;
+         background-color: #A883FF;
+         margin-left: 475px;
+        margin-right: 475px;
+        }
+        p#fpass {
+            color:#A883FF;
+        }
+        p#fpass :hover {
+            color: #c9b1ff;
+            transition: 0.7s;
+        }
+        input#dados1 {
+            color: white;
+            background-color:rgb(22, 22, 22) ;
+            border-radius: 5px;
+            border-style: none;
+            width:300px ;
+            height:35px ;
+            font-size: 12pt;
+        }
+        img.icons {
+        padding-right: 7px;
+        }
+        img#logo {
+            height:150px ;
+            width:150px ;
+            margin-bottom: 0px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Faça seu Login<br> ou Cadastre-se</h1>
+    <img src="logo-editado.png" alt="Logo da Empresa" id="logo">
+    <div id="login">
+       <p class="codebox"> <img src="usuario-em-branco.png" class="icons" alt="Usuário"><input type="text" name="user" id="dados1" maxlength="50" minlength="8" placeholder="Endereço de E-mail ou Usuário" size="35px"></p>
+
+        <p class="codebox"><img src="cadeado-em-branco-fechado.png" class="icons" alt="Senha"><input type="password" name="pass" id="dados1" maxlength="20" minlength="8" placeholder="Senha" size="35px"></p>
+
+        <span id="inbutt"><input type="button" class="button" value="Entrar"></span>
+
+        <span id="regbutt"><input type="button" class="button" value="Cadastrar-se" ></span>
+
+        <p id="fpass"><span>Esqueceu a senha?</span></p>
+    </div>
+</body>
+</html>
